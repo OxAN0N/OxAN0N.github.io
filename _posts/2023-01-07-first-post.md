@@ -2,9 +2,9 @@
 title : "github.io 블로그 개설"
 excerpt : "github.io로 블로그를 작성하기로 했다."
 categories : 
-  - log 
+  - Log 
 tags:
-  - log
+  - Log
 last_modified_at : 2023-01-07
 ---
 
