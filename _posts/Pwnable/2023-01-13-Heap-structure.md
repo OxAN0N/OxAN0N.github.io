@@ -62,7 +62,7 @@ Arena에 대한 자세한 설명은 다음 [포스팅][1]에서 기술한다.
 3. top chunk가 요청한 크기보다 작은 경우, sysmalloc() 함수 호출
 4. sysmalloc() 함수를 통해 시스템에 메모리를 요청해서 top chunk의 크기를 확장하고 대체
 <br>※ sysmalloc() 함수는 기존의 영역을 해제한 후, 새로 할당함<br>
-<center><img src="https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F98d594a8-8a72-4116-a2d8-822871fc4f2e%2FUntitled.png&blockId=84dc7cbe-a6f0-4862-b876-a39325d83dc8" width="70%"></center>
+<center><img src="https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F98d594a8-8a72-4116-a2d8-822871fc4f2e%2FUntitled.png&blockId=84dc7cbe-a6f0-4862-b876-a39325d83dc8" width="80%"></center>
 
 - **free 함수 호출 순서 :  libc_free() -> int_free() -> systrim() or heap_trim() or munmap_chunk()**
 1. libc_free() 함수에서 mmap으로 할당된 메모리인지 확인한 후, 맞을 경우 munmap_chunk() 함수를 통해 메모리 해제
@@ -71,13 +71,13 @@ Arena에 대한 자세한 설명은 다음 [포스팅][1]에서 기술한다.
 4. 병합된 top chunk가 너무 커서 Arena의 크기를 넘어선 경우, top chunk의 크기를 줄이기 위해 systrim() 함수 호출
 5. 문제가 없다면, heap_trim() 함수 호출
 6. mmap으로 할당된 chunk라면 munmap_chunk()를 호출 <br>
-<center><img src="https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9f25f0d7-96df-4bd3-8643-4e348d72d236%2FUntitled.png&blockId=3c284f69-65aa-4604-8a5e-866194bfeada" width="70%"></center>
+<center><img src="https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9f25f0d7-96df-4bd3-8643-4e348d72d236%2FUntitled.png&blockId=3c284f69-65aa-4604-8a5e-866194bfeada" width="80%"></center>
 
 
 ## 참고 & 출처
 [**출처 1**](https://jeongzero.oopy.io/bcb0067a-3d2d-4e00-b8e7-499fba15e1bb#bcb0067a-3d2d-4e00-b8e7-499fba15e1bb)
 
-[1]: /pwnable/heap-arena/
+[1]: /pwnable/Heap-arena/
 
 
 
