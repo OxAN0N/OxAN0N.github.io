@@ -7,7 +7,7 @@ tags:
   - Heap
   - Memory
   - Pwnable
-last_modified_at : 2023-01-13
+last_modified_at : 2023-01-14
 ---
 # 1. Arena
 Multithreaded 환경에서 각각의 thread가 서로 간섭하지 않고 서로 다른 메모리 영역에 access 할 수 있도록 도와주는 heap 영역을 Arena라고 한다. 
