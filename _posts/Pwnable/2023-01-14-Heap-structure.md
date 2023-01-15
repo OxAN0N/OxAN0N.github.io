@@ -77,6 +77,9 @@ ptmalloc은 특정 조건을 만족하면 해제된 공간들을 병합하기도
 
 #### 2.3 함수 호출 알고리즘
 
+아래 함수 호출 알고리즘을 공부하기에 앞서 필요한 [Arena][2]와 [chunk][3], [bins][4]에 대한 내용은 해당 줄의 링크를 통해서 확인할 수 있다. 
+
+
 - **malloc 함수 호출 순서 : libc_malloc() → int_malloc() → sysmalloc()**
 1. libc_malloc() 함수에서 사용하는 Thread에 맞게 Arena를 설정한 후, int_malloc() 함수 호출
 2. int_malloc() 함수에서는 재사용할 수 있는 bin을 탐색하여 재할당하고, 마땅한 bin이 없다면 top chunk에서 분리해서 할당
