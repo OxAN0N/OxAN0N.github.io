@@ -77,7 +77,7 @@ ptmalloc은 특정 조건을 만족하면 해제된 공간들을 병합하기도
 
 #### 2.3 함수 호출 알고리즘
 
-아래 함수 호출 알고리즘을 공부하기에 앞서 필요한 [Arena][2]와 [chunk][3], [bins][4]에 대한 내용은 해당 줄의 링크를 통해서 확인할 수 있다. 
+아래 함수 호출 알고리즘을 공부하기에 앞서 필요한 [Arena][1]와 [chunk][2], [bins][3]에 대한 내용은 해당 줄의 링크를 통해서 확인할 수 있다. 
 
 
 - **malloc 함수 호출 순서 : libc_malloc() → int_malloc() → sysmalloc()**
@@ -104,8 +104,8 @@ ptmalloc은 특정 조건을 만족하면 해제된 공간들을 병합하기도
 
 
 [1]: /pwnable/Heap-arena/
-
-
+[2]: /pwnable/Heap-chunk/
+[3]: /pwnable/Heap-bins/
 
 
 
