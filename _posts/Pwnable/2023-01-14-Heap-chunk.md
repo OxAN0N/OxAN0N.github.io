@@ -64,7 +64,7 @@ free된 chunk들은 단일한 freed chunk로 결합된다는 특징을 가지고
 
 - fd (forward pointer) / bk (backward pointer)
 
-  fd와 bk는 각각 해제된 다음 chunk와 해제된 이전 chunk를 가리키는 포인터이다. 이러한 포인터는 단일/이중 연결 리스트 형태로 구현되어잇다. `bins`들에서 freed chunk들이 관리된다. (bins에 대한 설명은 다음 포스팅에서 다룬다.)
+  fd와 bk는 각각 해제된 다음 chunk와 해제된 이전 chunk를 가리키는 포인터이다. 이러한 포인터는 단일/이중 연결 리스트 형태로 구현되어잇다. `bins`들에서 freed chunk들이 관리된다. (bins에 대한 자세한 설명은 다음 [포스팅][7]에서 다룬다.)
 
   ![bins_1][4]
 
@@ -107,4 +107,5 @@ freed chunk들이 메모리 할당 요청을 만족하지 못하는 경우, Top 
 [4]: ../../assets/images/pwnable/bin_1.png
 [5]: ../../assets/images/pwnable/bin_2.png
 
-[6]: /pwnable/Heap-arena
+[6]: /pwnable/Heap-arena/
+[7]: /pwnable/Heap-bins/
