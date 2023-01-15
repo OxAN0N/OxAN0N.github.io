@@ -7,7 +7,8 @@ tags:
   - Heap
   - Memory
   - Pwnable
-last_modified_at : 2023-01-14
+date:               2023-01-14 00:00:0 +0000
+last_modified_at:   2023-01-14 00:00:0 +0000
 ---
 
 ## 1. 개요
