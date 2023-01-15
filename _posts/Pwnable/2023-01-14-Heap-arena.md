@@ -21,7 +21,8 @@ Multithreaded 환경에서 각각의 thread가 서로 간섭하지 않고 서로
 // 32bit system인 경우 long타입 크기가 4bytes이므로 (core 갯수 * 4)만큼 arena를 가짐
 // 64bit system인 경우 long타입 크기가 8bytes이므로 (core 갯수 * 8)만큼 arena를 가짐
 ```
-제한된 크기만큼 Arena가 이미 존재해서 더 이상 늘릴 수 없는 경우에는, 여러 thread가 하나의 Arena를 공유해야한다.
+제한된 크기만큼 Arena가 이미 존재해서 더 이상 늘릴 수 없는 경우에는, 여러 thread가 하나의 Arena를 공유해야 한다.
+(이 경우 병목 현상이 발생할 수 있어, 이후 tcache라는 개념이 도입되었다.)
 
 따라서, 각각의 Arena 안에는 여러 개의 thread가 존재할 수 있으며, 이 경우 mutex를 이용해서 접근을 제어한다.
 
