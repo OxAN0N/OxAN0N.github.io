@@ -96,6 +96,8 @@ freed chunk들이 메모리 할당 요청을 만족하지 못하는 경우, Top 
 
 만약 현재의 Top chunk의 크기보다 더 큰 사이즈를 요청하는 경우, main_arena의 경우 sbrk로 Top chunk의 크기를 확장시키고, thread_arena의 경우 mmap으로 새롭게 메모리 영역을 받아온다.
 
+만약 Top chunk와 인접한 chunk가 free 된다면, 해당 chunk는 Top chunk와 병합된다. (Chunk consolidation)
+
 
 ## 출처 & 참조
 [**참조 1**](https://jeongzero.oopy.io/b7a95ad0-a76b-4cb9-a431-7f2a5cd95258)<br>
