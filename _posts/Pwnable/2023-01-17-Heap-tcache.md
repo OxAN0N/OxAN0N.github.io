@@ -120,8 +120,8 @@ tcache와 관련된 주요 함수
 4. tcache에 넣을 수 있는 chunk이면, tcache_put함수를 호출하여 넣는다.
 
 ## 출처 & 참고
-[**출처 1**] (https://jeongzero.oopy.io/2c5b7648-5f96-42c4-8366-300e7b5ebac4)
-[**출처 2**] (https://dreamhack.io)
+[**출처 1**](https://jeongzero.oopy.io/2c5b7648-5f96-42c4-8366-300e7b5ebac4) <br>
+[**출처 2**](https://dreamhack.io)
 
 [1]: ../../assets/images/pwnable/tcache.jpeg
 [2]: ../../assets/images/pwnable/tcache_malloc.png
