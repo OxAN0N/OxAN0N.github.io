@@ -82,7 +82,8 @@ tcache_get (size_t tc_idx){
 
  tcache에 연결된 chunk를 재사용할 때 사용하는 함수인 tcache_get에 재사용하는 chunk의 key값에 NULL을 대입하는 코드가 추가되었다.
 
- ### 3.4 _int_free
+### 3.4 _int_free
+
  ```c
  _int_free (mstate av, mchunkptr p, int have_lock)
  #if USE_TCACHE
