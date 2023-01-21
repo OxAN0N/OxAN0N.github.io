@@ -163,7 +163,7 @@ int main() {
 이처럼 tcache에 같은 chunk가 두 번 연결되는 것을 Tcache Duplication이라고 하며, 이는 double free bug를 통해서 발생시킬 수 있다.
 
 ## 출처 & 참고
-[출처] (https://dreamhack.io)
+[출처](https://dreamhack.io)
 
 [1]: ./2023-01-14-Heap-chunk.md
 [2]: ./2023-01-17-Heap-tcache.md
