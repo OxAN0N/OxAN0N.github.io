@@ -82,7 +82,7 @@ typedef struct tcache_entry
 cf) fastbin과 tcache의 차이
 - tcache는 fd가 fd를 가리키는 반면, fastbin은 prev_size를 가리킨다.
 - tcache에서는 prev_size와 prev_inuse bit을 설정하지 않는다. 
-- tcache는 tcache_pthread_struct가 관리하고 fastbin은 libc에 존재하는 main_arena가 관리한다.
+- tcache는 tcache_perthread_struct가 관리하고 fastbin은 libc에 존재하는 main_arena가 관리한다.
 
 
 ## 4. tcache 사용 과정
@@ -100,7 +100,7 @@ tcache와 관련된 주요 함수
   - 존재하지 않을 시, 다음 로직 실행
 2. tcache가 비어있을 시, MAYBE_INIT_TCACHE가 호출
   - MAYBE_INIT_TCACHE 내에서 (tcache가 NULL일 시) tcache_init 함수를 호출 
-  - tcach_init 내에서 _int_malloc을 호출해 heap 영역을 할당받아, tcache_pthread_struct를 청크로 할당
+  - tcach_init 내에서 _int_malloc을 호출해 heap 영역을 할당받아, tcache_perthread_struct를 청크로 할당
 3. 현재 요청한 크기에 맞는 chunk가 tcache 내에 존재시, tcache_get을 호출해 재할당
 4. tcache에 재할당 해줄 수 있는 chunk가 없을 시, _int_malloc을 호출
 5. fastbin, smallbin, unsortedbin 등을 확인하고 재할당 가능한 chunk가 있다면 재할당한다.  
@@ -115,7 +115,7 @@ tcache와 관련된 주요 함수
 1. 처음에 _libc_free 함수가 호출되면서 free_hook을 검사한다. 있으면 (free_hook이 NULL이 아니면) 호출되고 없으면 넘어간다.
 2. tcache가 비어있을 시, MAYBE_INIT_TCACHE가 호출
   - MAYBE_INIT_TCACHE 내에서 (tcache가 NULL일 시) tcache_init 함수를 호출 
-  - tcach_init 내에서 _int_malloc을 호출해 heap 영역을 할당받아, tcache_pthread_struct를 청크로 할당
+  - tcach_init 내에서 _int_malloc을 호출해 heap 영역을 할당받아, tcache_perthread_struct를 청크로 할당
 3. _int_free 함수가 호출된다
 4. tcache에 넣을 수 있는 chunk이면, tcache_put함수를 호출하여 넣는다.
 
