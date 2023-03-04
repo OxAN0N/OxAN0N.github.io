@@ -2,6 +2,23 @@
 main:
   - title : "Category"
     url: /categories/
+sidebar-category:
+  - title: "Category"
+    children:
+      - title: "Pwnable"
+        url: "/Pwnable"
+      - title: "Log"
+        url:  "/Log"
+      - title: "ML"
+        url:  "/ML"
+      - title: "Flutter"
+        url:  "/Flutter"
+      - title: "Manual"
+        url: "/Manual"
+      - Web: "Web"
+        url: "/Web"  
+
+
   # - title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
