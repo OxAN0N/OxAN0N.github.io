@@ -31,10 +31,10 @@ const test = "test";
 
 각각의 원시 타입은 해당 타입의 가능한 모든 리터럴 값의 집합으로도 해석할 수 있다. 
 
-* boolean : true | false
+* boolean : true, false
 * null과 undefined : 둘 다 자기 자신, 즉 하나의 리터럴 값만을 가짐
-* number : 0 | 1 | 2 | ... | 0.1 | ...
-* string : "" | "a" | "b" | ... | "ab" | ...
+* number : 0 , 1 , 2 , ... , 0.1 , ...
+* string : "" , "a" , "b" , ... , "ab" , ...
 
 
 유니언 타입 애너테이션에서는 리터럴과 원시 타입을 섞어서 사용할 수도 있다.
@@ -141,7 +141,7 @@ type Id = number | string;
 console.log(Id) // Error : 타입오류 
 ```
 
-#### 타입 별칭 결함
+#### 타입 별칭 결합
 타입 별칭은 다음과 같이 다른 타입 별칭의 참조가 가능하다. 
 
 ```
