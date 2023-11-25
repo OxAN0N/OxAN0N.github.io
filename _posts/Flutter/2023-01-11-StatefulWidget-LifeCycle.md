@@ -9,6 +9,7 @@ tags:
   - LifeCycle
 last_modified_at : 2023-01-11
 ---
+<link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }} Feed">
 
 ## StatefulWidget
 > A widget that has mutable state
