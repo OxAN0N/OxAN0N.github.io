@@ -2,11 +2,11 @@
 title : "Tcache Poisioning"
 excerpt : ""
 categories :
-  - Pwnable
+  - pwnable
 tags:
   - Heap
   - Tcache Poisoning
-  - Pwnable
+  - pwnable
 date:               2023-01-21 01:00:0 +0000
 last_modified_at:   2023-01-21 01:00:0 +0000
 ---

@@ -2,11 +2,11 @@
 title : "[Heap] Heap basic #1"
 excerpt : "메모리 Heap 영역과 그 동작 방식"
 categories :
-  - Pwnable
+  - pwnable
 tags:
   - Heap
   - Memory
-  - Pwnable
+  - pwnable
 date:               2023-01-14 00:00:0 +0000
 last_modified_at:   2023-01-14 00:00:0 +0000
 ---

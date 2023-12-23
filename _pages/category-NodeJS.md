@@ -1,9 +1,9 @@
 ---
-title: "Log"
+title: "Node.js"
 layout: archive
-permalink: /Log
+permalink: /NodeJS
 ---
 
 
-{% assign posts = site.categories.Log %}
+{% assign posts = site.categories.NodeJS%}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

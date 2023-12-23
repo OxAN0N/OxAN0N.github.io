@@ -1,9 +1,9 @@
 ---
-title: "Pwnable"
+title: "pwnable"
 layout: archive
-permalink: /Pwnable
+permalink: /pwnable
 ---
 
 
-{% assign posts = site.categories.Pwnable %}
+{% assign posts = site.categories.pwnable %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

@@ -2,7 +2,8 @@
 title : "JavaScript 엔진과 런타임"
 excerpt : ""
 categories :
-  - Node.js
+  - web 
+  - NodeJS
 tags:
   - RTE
   - JavaScript Runtime

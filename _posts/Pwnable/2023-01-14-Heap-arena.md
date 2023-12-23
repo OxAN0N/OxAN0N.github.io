@@ -2,11 +2,11 @@
 title : "[Heap] Heap basic #2"
 excerpt : "Arena의 개념"
 categories :
-  - Pwnable
+  - pwnable
 tags:
   - Heap
   - Memory
-  - Pwnable
+  - pwnable
 date:               2023-01-14 01:00:0 +0000
 last_modified_at:   2023-01-14 01:00:0 +0000
 ---

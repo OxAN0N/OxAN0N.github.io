@@ -5,18 +5,18 @@ main:
 sidebar-category:
   - title: "Category"
     children:
-      - title: "Pwnable"
-        url: "/Pwnable"
-      - title: "Log"
-        url:  "/Log"
-      - title: "ML"
-        url:  "/ML"
-      - title: "Flutter"
-        url:  "/Flutter"
       - title: "Manual"
-        url: "/Manual"
-      - Web: "Web"
-        url: "/Web"  
+        url: "/manual"
+      - title: "Computer Science"
+        url: "/computer_science"
+      - title: "Pwnable"
+        url: "/pwnable"
+      - title: "Node.js"
+        url: "/NodeJS"
+      - title: "TypeScript"
+        url: "/TypeScript"
+        
+
 
 
   # - title: "Quick-Start Guide"

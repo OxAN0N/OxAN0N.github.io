@@ -2,11 +2,11 @@
 title : "[Heap] Heap basic #5"
 excerpt : "tcache의 개념과 특징"
 categories :
-  - Pwnable
+  - pwnable
 tags:
   - Heap
   - Memory
-  - Pwnable
+  - pwnable
 date:               2023-01-18 00:00:0 +0000
 last_modified_at:   2023-01-18 00:00:0 +0000
 ---

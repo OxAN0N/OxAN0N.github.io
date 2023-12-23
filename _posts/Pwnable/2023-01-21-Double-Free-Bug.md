@@ -2,11 +2,11 @@
 title : "Double Free Bug"
 excerpt : "Double Fee Bug와 보호 기법의 우회 원리"
 categories :
-  - Pwnable
+  - pwnable
 tags:
   - Heap
   - Double Free Bug
-  - Pwnable
+  - pwnable
 date:               2023-01-21 00:00:0 +0000
 last_modified_at:   2023-01-21 00:00:0 +0000
 ---
